@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="application.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#back" text="back" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem disable="true" mnemonicParsing="false" text="None" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem disable="true" mnemonicParsing="false" text="None" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="penalty_student_ID" layoutX="57.0" layoutY="186.0" prefHeight="29.0" prefWidth="195.0" promptText="StudentID" />
+      <TextField fx:id="penaltyNumber" layoutX="281.0" layoutY="186.0" prefHeight="29.0" prefWidth="132.0" promptText="Penalty 갯수" />
+      <Button layoutX="449.0" layoutY="186.0" mnemonicParsing="false" onAction="#Pdelete" prefHeight="29.0" prefWidth="80.0" text="Delete" />
+   </children>
+</AnchorPane>
